@@ -1,0 +1,41 @@
+{
+  "edition": "OWASP Top 10:2025 (source: owasp.org/Top10/2025)",
+  "categories": [
+    {"id": "A01:2025", "name": "Broken Access Control",
+     "keywords": ["idor", "access control", "authorization", "privilege", "forced browsing", "path traversal", "csrf", "ssrf", "server-side request forgery"]},
+    {"id": "A02:2025", "name": "Security Misconfiguration",
+     "keywords": ["misconfiguration", "default credentials", "verbose error", "cors", "directory listing", "xxe", "security headers"]},
+    {"id": "A03:2025", "name": "Software Supply Chain Failures",
+     "keywords": ["supply chain", "outdated", "cve", "library", "dependency", "build", "ci/cd"]},
+    {"id": "A04:2025", "name": "Cryptographic Failures",
+     "keywords": ["encryption", "tls", "cleartext", "hashing", "weak crypto", "sensitive data exposure"]},
+    {"id": "A05:2025", "name": "Injection",
+     "keywords": ["sql", "xss", "cross-site scripting", "command injection", "ldap", "template injection"]},
+    {"id": "A06:2025", "name": "Insecure Design",
+     "keywords": ["business logic", "design flaw", "rate limit"]},
+    {"id": "A07:2025", "name": "Authentication Failures",
+     "keywords": ["authentication", "session", "brute force", "password", "credential"]},
+    {"id": "A08:2025", "name": "Software or Data Integrity Failures",
+     "keywords": ["deserialization", "integrity", "unsigned update"]},
+    {"id": "A09:2025", "name": "Security Logging and Alerting Failures",
+     "keywords": ["logging", "alerting", "monitoring", "audit"]},
+    {"id": "A10:2025", "name": "Mishandling of Exceptional Conditions",
+     "keywords": ["error handling", "exception", "fail open", "unhandled"]}
+  ],
+  "cwes": {
+    "IDOR": "CWE-639 Authorization Bypass Through User-Controlled Key",
+    "Missing authorization": "CWE-862 Missing Authorization",
+    "Incorrect authorization": "CWE-863 Incorrect Authorization",
+    "XSS": "CWE-79 Improper Neutralization of Input During Web Page Generation",
+    "SQL injection": "CWE-89 SQL Injection",
+    "Command injection": "CWE-78 OS Command Injection",
+    "SSRF": "CWE-918 Server-Side Request Forgery",
+    "CSRF": "CWE-352 Cross-Site Request Forgery",
+    "Open redirect": "CWE-601 URL Redirection to Untrusted Site",
+    "Path traversal": "CWE-22 Path Traversal",
+    "Information exposure": "CWE-200 Exposure of Sensitive Information to an Unauthorized Actor",
+    "Missing authentication": "CWE-306 Missing Authentication for Critical Function",
+    "Hard-coded credentials": "CWE-798 Use of Hard-coded Credentials",
+    "Cleartext transmission": "CWE-319 Cleartext Transmission of Sensitive Information"
+  }
+}
